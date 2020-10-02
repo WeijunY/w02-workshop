@@ -1,9 +1,13 @@
 # Task 1: Generalised Fibonacci
 
 # Define your function here:
-
-
-
+def fib(p,q,n):
+    dp=[1]*n
+    for i in range(2,n):
+        dp[i]=p*dp[i-1]+q*dp[i-2]
+    print(dp)
+fib(1,1,15)
+fib(1,3,15)
 
 
 
